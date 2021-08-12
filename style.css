@@ -114,6 +114,7 @@ body{
     font-size: 36px;
     text-transform: uppercase;
     letter-spacing: -1px;
+    margin-bottom: 50px;
 }
 .text-of-section{
     font-weight: 400;
@@ -161,7 +162,6 @@ margin-right: 10px;
 .name-decoration{
     display: flex;
     margin-top: 80px;
-    margin-bottom: 60px;
 }
 .name-decoration::before{
     content: "";
@@ -240,13 +240,9 @@ margin-right: 10px;
 }
 .pofile-of-team{
     background-color: #e1e6ea;
+    margin-bottom: 30px;
 }
-.pofile-of-team:first-child{
-    margin-left: 0px;
-}
-.pofile-of-team:last-child{
-    margin-right: 0px;
-}
+
 .description-of-profile{
     padding:20px;
 }
@@ -282,12 +278,8 @@ margin-right: 10px;
         flex: 0 0 58.33333%;
         max-width: 58.33333%;
     }
-    .col-md-5 {
-        flex: 0 0 41.66666%;
-        max-width: 41.66666%;
-    }
-    .col-sm-6{
-        flex:0 0 50%;
+    .col-sm-6 {
+        flex: 0 0 50%;
         max-width: 50%;
     }
   
@@ -334,21 +326,17 @@ margin-right: 10px;
         background-position: center;
         background-size: cover;    
     }
-    #we-are-modest-section{
-        height: 615px;
-    }
+    
     .we-are-modest-section-part-1{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding-top: 50px;
-        padding-bottom: 50px;
     }
     .we-are-modest-section-part-1 .text-of-section{
         margin-bottom: 40px;
     }
     .we-are-modest-section-part-2{
-        padding-top: 50px;
         padding-bottom: 50px;
     }
     .description-case-list{
@@ -369,9 +357,6 @@ margin-right: 10px;
     }
     .number-of-description-item{
         flex-shrink: 0;
-    }
-    .pofile-of-team{
-        margin-bottom: 30px;
     }
 
     
@@ -409,9 +394,18 @@ margin-right: 10px;
         border-width: 2px;
         border-color: transparent;
         }
+    #we-are-modest-section{
+            height: 615px;
+        }
     .we-are-modest-section-part-1{
         display: flex;
         justify-content: flex-start;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .we-are-modest-section-part-2{
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     
     .description-case-list{
@@ -534,11 +528,7 @@ margin-right: 10px;
         display: flex;
         justify-content: space-evenly;
     }
-    #we-are-modest-section .name-of-section{
-        display: flex;
-        margin-bottom: 30px;
     
-    }
     .we-are-modest-section-part-1{
         flex-direction: column;
     }
@@ -547,7 +537,7 @@ margin-right: 10px;
     }
     .hrefs-social-networks{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .name-of-section{
         margin-bottom: 30px;
@@ -559,9 +549,5 @@ margin-right: 10px;
     .number-of-description-item{
         flex-shrink: 0;
     }
-    .pofile-of-team{
-        margin-bottom: 15px;
-    }
-
     
     }
