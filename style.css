@@ -103,7 +103,7 @@ body{
 
 /* main */
 #slider{
-    background: url(blog/img\(bg-1-page\).png);
+    background: url(blog/img\(bg_1_page\).png);
 }
 .content-of-slider-section>.text-of-section{
     color: #ccd0d7;
