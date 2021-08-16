@@ -109,7 +109,7 @@ body{
 }
 .name-of-section{
     font-family: 'Quattrocento Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 36px;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -137,9 +137,12 @@ body{
 .btn:hover{
     border-color: rgb(35, 183, 164);
     background-color: rgb(35, 183, 164);
-    cursor:pointer
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: 1s;
+    z-index: 1;
+    }
       
-}
 /* slider */
 .slide-buttons{
 width: 13px;
@@ -320,10 +323,10 @@ margin-right: 10px;
     color: #8d8f92;
 }
 /* lovely-work-section */
-.lovely-work-section{
+#lovely-work-section{
     background-color: #3a454d;
 }
-.lovely-work-section .name-of-section{
+#lovely-work-section .name-of-section{
     color: #fff;
 }
 .portfolio-item{
@@ -374,6 +377,69 @@ margin-right: 10px;
     justify-content: center;
     margin: 30px 0 60px 0 ;
 }
+/* what-we-do-section */
+#what-we-do-section{
+    background-color: #fff;
+    padding-bottom: 110px;
+}
+.servise-item{
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+}
+.servise-item:hover{
+    box-shadow: 0 0 5px #4fc5b6;
+    transform: scale(1.1);
+    z-index: 1;
+    transition: 1s;
+}
+.image-of-servise-item{
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+.name-of-servise-item{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 17px;
+    color: #292f36;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.description-of-servise-item{
+    color: #8d8f92;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.625;
+    font-family: 'Open Sans', sans-serif;
+}
+/* features */
+#features{
+    background-color: #3a454d;
+}
+#features .name-of-section{
+    color: #fff;
+}
+.post-item{
+    padding-bottom: 40px;
+    margin-bottom: 80px;
+}
+.name-of-post-item{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.describe-of-post-item{
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.625;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
 
 /* tablet */
 @media(min-width:768px){
