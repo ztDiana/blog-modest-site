@@ -1,4 +1,3 @@
-
 *{box-sizing: border-box;}
 body{
     font-family: "Open Sans", sans-serif;
@@ -19,8 +18,8 @@ body{
     flex-wrap: wrap;
 }
 [class*="col-"]{
-    padding-left: -15px;
-    padding-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .col-xs-12{
     flex: 0 0 100%;
@@ -92,7 +91,7 @@ body{
     width: 20px;
     height: 20px;
     top: 3px; right: 5px;
-    background: url(blog/icon\ \(1\).png) no-repeat 50% 50%;
+    background: url(Blog/search.png) no-repeat 50% 50%;
     border: none;
     outline: none;
 }
@@ -103,7 +102,7 @@ body{
 
 /* main */
 #slider{
-    background: url(Blog/bg1page.png);
+    background: url(Blog/bg-1-page.png);
 }
 .content-of-slider-section>.text-of-section{
     color: #ccd0d7;
@@ -125,8 +124,8 @@ body{
     color: #fff;
     background: none;
     margin-right: 5px;
-    width: 124px;
     height: 44px;
+    padding: 0 30px;
     line-height: 44px;
     font-size: 14px;
     border-radius: 3px;
@@ -196,25 +195,39 @@ margin-right: 10px;
     display: flex;
     margin-bottom: 40px;
 }
+.social-networks-item:hover{
+    border: none;
+    box-shadow: 0 0 5px #1d212675;
+    transform: scale(1.2);
+    transition: 0.5s;
+    z-index: 2;
+}
+.social-networks-items:active{
+    box-shadow: 0 0 5px rgb(35, 183, 164);
+    transform: scale(1.2);
+    transition: 0.5s;
+    z-index: 2;
+}
+
 .social-networks-item{
     width: 60px;
     height: 60px;
     border: 1px solid #fff
 }
 .facebook-item{
-    background:#d0d5d9 url(blog/icon\ \(6\).png) 50% 50%;
+    background:#d0d5d9 url(blog/facebook.png) 50% 50%;
 }
 .twitter-item{
-    background:#d0d5d9 url(blog/icon\ \(4\).png) 50% 50%;
+    background:#d0d5d9 url(blog/twitter.png) 50% 50%;
 }
 .google-item{
-    background:#d0d5d9 url(blog/icon\ \(5\).png) 50% 50%;
+    background:#d0d5d9 url(blog/google.png) 50% 50%;
 }
 .dribbble-item{
-    background:#d0d5d9 url(blog/icon\ \(3\).png) 50% 50%;
+    background:#d0d5d9 url(blog/dribble.png) 50% 50%;
 }
 .behance-item{
-    background:#d0d5d9 url(blog/icon\ \(2\).png) 50% 50%;
+    background:#d0d5d9 url(blog/be.png) 50% 50%;
 }
 .social-networks-item:hover{
     cursor: pointer;
@@ -238,13 +251,61 @@ margin-right: 10px;
     background-color: #fff;
     
 }
-.pofile-of-team{
+.profile-of-team{
     background-color: #e1e6ea;
     margin-bottom: 30px;
+}
+.profile-conect-us{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.profile-of-team:hover .profile-conect-us{ 
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.39);
+}  
+  
+.profile-of-team:hover .description-of-profile{
+    background-color: #3a454d;
+    transition: 0.7s;
+}
+.profile-of-team:hover .description-of-profile>div{
+    color: #fff;
+    transition: 0.5s;
+}
+.profile-conect-us-item{
+    width: 50px;
+    height: 50px;
+    background-color: #3a454d;
+    margin-right: 1px;
+}
+.profile-conect-us-item:hover{
+    box-shadow: 0 0 5px #fff;
+    transform: scale(1.2);
+    transition: 0.5s;
+    z-index: 2;
+}
+.profile-conect-us-item:last-child{
+    margin: 0;
+}
+.photo-of-team{
+    position: relative;
+    width: 100%;
+    height:fit-content;
 }
 
 .description-of-profile{
     padding:20px;
+    position: relative;
+    top: -2px;
 }
 .name-of-team{
     font-family: 'Quattrocento Sans', sans-serif;
@@ -258,8 +319,61 @@ margin-right: 10px;
     font-size: 14px;
     color: #8d8f92;
 }
+/* lovely-work-section */
+.lovely-work-section{
+    background-color: #3a454d;
+}
+.lovely-work-section .name-of-section{
+    color: #fff;
+}
+.portfolio-item{
+    margin-bottom: 30px;
+    position: relative;
+}
+.portfolio-item:hover .portfolio-hover{
+    display: block;
+}
+.portfolio-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0; right: 0;
+    display: none;
 
-
+}
+.portfolio-img-hover{
+    height: 100%;
+    background-color: rgba(41, 47, 54, 0.502);
+}
+.portfolio-hover-icon{
+    height: 73%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-hover-icon>a :hover {
+    transform: scale(1.7);
+    transition: 1s;
+}
+.name-of-portfolio-item{
+    color: #fff;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 27%;
+    width: 100%;
+    padding-top: 9%;
+    padding-left: 20px;
+    background-color: #292f36;
+    /* width: 360px; */
+}
+.portfolio-show-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 60px 0 ;
+}
 
 /* tablet */
 @media(min-width:768px){
@@ -274,15 +388,18 @@ margin-right: 10px;
         flex: 0 0 66.66667%;
         max-width: 66.66667%;
     }
-    .col-sm-7{
-        flex: 0 0 58.33333%;
-        max-width: 58.33333%;
-    }
     .col-sm-6 {
         flex: 0 0 50%;
         max-width: 50%;
     }
-  
+    .col-sm-7{
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-sm-8{
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
     .logo{
         display: flex;
         justify-content: center;
@@ -358,7 +475,29 @@ margin-right: 10px;
     .number-of-description-item{
         flex-shrink: 0;
     }
-
+    .profile-of-team:active .profile-conect-us{ 
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.39);
+    }  
+      
+    .profile-of-team:active .description-of-profile{
+        background-color: #3a454d;
+        transition: 0.7s;
+    }
+    .profile-of-team:active .description-of-profile>div{
+        color: #fff;
+        transition: 0.5s;
+    }
+    .portfolio-item:active .portfolio-hover{
+        display: block;
+    }
+    .portfolio-hover-icon>a :active {
+        transform: scale(1.7);
+        transition: 1s;
+    }
     
      
 }
@@ -379,6 +518,10 @@ margin-right: 10px;
     .col-md-5 {
         flex: 0 0 41.66666%;
         max-width: 41.66666%;
+    }
+    .col-md-4{
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
     }
     
     .logo{
@@ -548,6 +691,30 @@ margin-right: 10px;
     }
     .number-of-description-item{
         flex-shrink: 0;
+    }
+    .profile-of-team:active .profile-conect-us{ 
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.39);
+    }  
+      
+    .profile-of-team:active .description-of-profile{
+        background-color: #3a454d;
+        transition: 0.7s;
+    }
+    .profile-of-team:active .description-of-profile>div{
+        color: #fff;
+        transition: 0.5s;
+    }
+    .portfolio-item:active .portfolio-hover{
+        display: block;
+        transition: 3s;
+    }
+    .portfolio-hover-icon>a :active {
+        transform: scale(1.7);
+        transition: 0.5s;
     }
     
     }
