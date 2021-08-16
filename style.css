@@ -91,7 +91,7 @@ body{
     width: 20px;
     height: 20px;
     top: 3px; right: 5px;
-    background: url(Blog/search.png) no-repeat 50% 50%;
+    background: url(images/search.png) no-repeat 50% 50%;
     border: none;
     outline: none;
 }
@@ -215,19 +215,19 @@ margin-right: 10px;
     border: 1px solid #fff
 }
 .facebook-item{
-    background:#d0d5d9 url(blog/facebook.png) 50% 50%;
+    background:#d0d5d9 url(images/facebook.png) 50% 50%;
 }
 .twitter-item{
-    background:#d0d5d9 url(blog/twitter.png) 50% 50%;
+    background:#d0d5d9 url(images/twitter.png) 50% 50%;
 }
 .google-item{
-    background:#d0d5d9 url(blog/google.png) 50% 50%;
+    background:#d0d5d9 url(images/google.png) 50% 50%;
 }
 .dribbble-item{
-    background:#d0d5d9 url(blog/dribble.png) 50% 50%;
+    background:#d0d5d9 url(images/dribble.png) 50% 50%;
 }
 .behance-item{
-    background:#d0d5d9 url(blog/be.png) 50% 50%;
+    background:#d0d5d9 url(images/be.png) 50% 50%;
 }
 .social-networks-item:hover{
     cursor: pointer;
