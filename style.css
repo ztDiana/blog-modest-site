@@ -40,9 +40,10 @@ body{
 }
 .main-menu-item:active{
     border: 2px solid #23b7a4;
+    color: #23b7a4;
     border-radius: 4px;
 }
-.main-menu-item>a:active{
+.main-menu-item:active .main-menu-item a{
     color: #23b7a4;
 }
 .main-menu-item>a{
@@ -382,22 +383,22 @@ margin-right: 10px;
     background-color: #fff;
     padding-bottom: 110px;
 }
-.servise-item{
+.service-item{
     margin-bottom: 30px;
     padding-bottom: 25px;
 }
-.servise-item:hover{
+.service-item:hover{
     box-shadow: 0 0 5px #4fc5b6;
     transform: scale(1.1);
     z-index: 1;
     transition: 1s;
 }
-.image-of-servise-item{
+.image-of-service-item{
     padding: 40px 0;
     display: flex;
     justify-content: center;
 }
-.name-of-servise-item{
+.name-of-service-item{
     text-transform: uppercase;
     text-align: center;
     font-family: 'Quattrocento Sans', sans-serif;
@@ -406,7 +407,7 @@ margin-right: 10px;
     font-weight: bold;
     margin-bottom: 30px;
 }
-.description-of-servise-item{
+.description-of-service-item{
     color: #8d8f92;
     font-size: 16px;
     text-align: center;
@@ -417,6 +418,9 @@ margin-right: 10px;
 #features{
     background-color: #3a454d;
 }
+#features .row{
+    justify-content: center;
+}
 #features .name-of-section{
     color: #fff;
 }
@@ -424,11 +428,26 @@ margin-right: 10px;
     padding-bottom: 40px;
     margin-bottom: 80px;
 }
+.post-item:hover{
+    background-color: #fff;
+    transform: scale(1.1);
+    z-index: 1;
+    transition: 1s;
+}
+.post-item:hover .name-of-post-item{
+    padding: 0 10px;
+    color: #3a454d;
+}
+.post-item:hover .describe-of-post-item{
+    padding: 0 10px;
+    color: #3a454d;
+}
 .name-of-post-item{
     margin-top: 50px;
     margin-bottom: 30px;
     font-family: 'Quattrocento Sans', sans-serif;
     color: #fff;
+    font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -436,6 +455,7 @@ margin-right: 10px;
     color: #fff;
     font-size: 16px;
     line-height: 1.625;
+    font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -564,6 +584,14 @@ margin-right: 10px;
         transform: scale(1.7);
         transition: 1s;
     }
+    #features{
+        padding-bottom: 40px;
+    }
+    .post-item{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
     
      
 }
@@ -624,7 +652,13 @@ margin-right: 10px;
     #meet-the-team{
         height: 650px;
     }
-    
+    #features{
+        padding: 0;
+    }
+    .post-item{
+        padding-bottom: 40px;
+        margin-bottom: 80px;
+    }
     
     
 }
