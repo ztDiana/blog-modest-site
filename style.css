@@ -33,7 +33,9 @@ body{
     display: flex;
     align-items: center;
 }
-
+.bold-text{
+    font-weight: 700;
+}
 .main-menu-item:hover{
     border: 2px solid #5b6168;
     border-radius: 4px;
@@ -205,12 +207,14 @@ margin-right: 10px;
     transform: scale(1.2);
     transition: 0.5s;
     z-index: 2;
+    border-radius: 25%;
 }
 .social-networks-items:active{
     box-shadow: 0 0 5px rgb(35, 183, 164);
     transform: scale(1.2);
     transition: 0.5s;
     z-index: 2;
+    border-radius: 25%;
 }
 
 .social-networks-item{
@@ -296,6 +300,7 @@ margin-right: 10px;
     transform: scale(1.2);
     transition: 0.5s;
     z-index: 2;
+    border-radius: 25%;
 }
 .profile-conect-us-item:last-child{
     margin: 0;
@@ -460,6 +465,41 @@ margin-right: 10px;
 
 }
 
+/* stay in touch */
+#contact-section{
+    position: relative;
+    background-color: #fff;
+}
+#contact-section>.container{
+    z-index: 10;
+}
+.map{
+    position: absolute;
+    top: 0;right: 0;
+    z-index: 1;
+}
+.name-of-contact-section{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #292f36;
+    font-weight: 700;
+}
+.content-of-contact-section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #8d8f92;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align:justify;
+}
+.form-item{
+    position: relative;
+}
+.form-item>input{
+    width: 100%;
+}
+  
 
 /* tablet */
 @media(min-width:768px){
@@ -616,6 +656,10 @@ margin-right: 10px;
     .col-md-4{
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
+    }
+    .col-md-6{
+        flex: 0 0 50%;
+        max-width: 50%;
     }
     
     .logo{
@@ -815,6 +859,9 @@ margin-right: 10px;
     .portfolio-hover-icon>a :active {
         transform: scale(1.7);
         transition: 0.5s;
+    }
+    .call-back-form>div{
+        width: 100%;
     }
     
     }
