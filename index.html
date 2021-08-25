@@ -427,6 +427,7 @@
                             <div class="content-of-contact-section">
                                 Cras fermentum elit quis magna congue,<span class="bold-text"> vel sodales</span> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus 
                             </div>
+                            <button class="btn btn-send-message">send message</button>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6"> 
@@ -443,15 +444,40 @@
                 </div>
                 <div class="col-xs-12 col-sm-3 col-md-2">
                     <div class="row footer-sotial-network">
-                            <div class="footer-sotial-network-item"><a href=""><img src="images/twitter-minini.png" alt=""></a></div>
-                            <div class="footer-sotial-network-item"><a href=""><img src="images/facebook-minini.png" alt=""></a></div>
-                            <div class="footer-sotial-network-item"><a href=""><img src="images/skype.png" alt=""></a></div>
-                            <div class="footer-sotial-network-item"><a href=""><img src="images/be-mini.png" alt=""></a></div>
-                            <div class="footer-sotial-network-item"><a href=""><img src="images/in-minini.png" alt=""></a></div>
+                        <div class="footer-sotial-network-item"><a href=""><img src="images/twitter-minini.png" alt=""></a></div>
+                        <div class="footer-sotial-network-item"><a href=""><img src="images/facebook-minini.png" alt=""></a></div>
+                        <div class="footer-sotial-network-item"><a href=""><img src="images/skype.png" alt=""></a></div>
+                        <div class="footer-sotial-network-item"><a href=""><img src="images/be-mini.png" alt=""></a></div>
+                        <div class="footer-sotial-network-item"><a href=""><img src="images/in-minini.png" alt=""></a></div>
                     </div>
                 </div>
             </div>
         </div> 
     </footer>
+    <div class="modal hidden">
+        <form action="" class="message-form">
+            <div class="form-canseling"><img class="form-cansel" src="images/icon-close.png" alt="" height=25px width="25px"></div>
+            <div class="user-data">
+                <div class="your-name">
+                    <label for="user-name">your name</label>
+                    <input type="text" name="" id="user-name" class="input-view">
+                </div>
+                <div class="your-email">
+                    <label for="user-email">your email</label>
+                    <input class="input-view" type="email" name="" id="user-email">
+                </div>
+            </div>
+            <div class="message">
+                <label for="message">your message</label>
+                <textarea class="input-view message-area"
+                name="" id="message-area"></textarea>
+            </div>
+            <div class="form-button">
+                <button class="btn form-btn">send message</button>
+            </div>
+        </form>
+    </div>
+
 </body>
+<script src="app.js"></script>
 </html>
