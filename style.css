@@ -841,6 +841,10 @@ margin-right: 10px;
       max-height: 60%;
        padding: 15px;
    }
+   .message-form{
+       min-height: 380px;
+       height: 380px;
+   }
    .user-data div{
        width: 48%;
    }
@@ -927,8 +931,8 @@ margin-right: 10px;
         margin-bottom: 80px;
     }
     .message-form{
-        min-height: 45%;
-        max-height: 45%;
+        min-height: 390px;
+        max-height: 390px;
     }
     #navMenu{display: none;}
     
@@ -1117,7 +1121,7 @@ margin-right: 10px;
     .message-form{
         width: 80%;
         padding: 10px;
-        height: 55%;
+        height: 345px;
 
     }
     .user-data{
