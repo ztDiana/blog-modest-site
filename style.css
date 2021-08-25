@@ -837,8 +837,8 @@ margin-right: 10px;
         line-height: 95px;
       }
    .message-form{
-      min-height: 80%;
-      max-height: 80%;
+      min-height: 60%;
+      max-height: 60%;
        padding: 15px;
    }
    .user-data div{
@@ -927,7 +927,8 @@ margin-right: 10px;
         margin-bottom: 80px;
     }
     .message-form{
-        min-height: 50%;
+        min-height: 45%;
+        max-height: 45%;
     }
     #navMenu{display: none;}
     
@@ -1143,5 +1144,6 @@ margin-right: 10px;
     }
     .form-button{
         padding: 0px;
+        margin-top: 7px;
     }
     }
