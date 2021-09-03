@@ -172,12 +172,96 @@ background:#929b9b ;
 }
 
 /* main */
-#slider{
+/* /* #slider */
+
+/* стиль стрілок */
+.swiper-button-prev::after, .swiper-button-next::after{
+    color: #23b7a4;
+    text-shadow: #8d8f92;
+    font-size: 40px;
+    width: 60px;
+    text-align: center;
+    
+}
+.swiper-button-prev, .swiper-button-next{
+ height: 100%;
+ top: 0%;
+ width: 60px;
+}
+/* стиль пагінації */
+.swiper .swiper-pagination{
+    padding: 20px;
+}
+
+/* позиція буллетів */
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    left: 80%;}
+
+/* стиль буллетів */
+.swiper .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    background-color: transparent;
+    opacity: 100%;
+}
+.swiper .swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+/* scrooobar */
+.swiper-scrollbar-drag {
+    background-color: #23b7a4;
+}
+
+
+
+/* слайд */
+
+.slide-1{
     background: url(images/bg-1-page.png);
+    background-size: cover;
+   
 }
-.content-of-slider-section>.text-of-section{
-    color: #ccd0d7;
+.slide-2{
+    background: url(images/slider-2.jpeg) no-repeat;
+    background-size:cover;
 }
+.slide-3{
+    background: url(images/slider-3.jpg) no-repeat;
+    background-size:cover;
+}
+.slide-2 .name-of-slider{
+    color: black;
+}
+.slide-2 .text-of-slider{
+    color: black;
+}
+.slide-2 .slider-section-buttons>.btn{
+    background-color: rgba(255, 255, 255, 0.767);
+    color: #23b7a4;
+}
+.slide-3 .name-of-slider{
+    color: black;
+}
+.slide-3 .text-of-slider{
+    color: black;
+}
+.slide-3 .content-of-slider-section .text-of-section, .name-of-section{
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 15px;
+    padding: 10px;
+}
+.slide-3 .slider-section-buttons>.btn{
+    background-color: rgba(255, 255, 255, 0.767);
+    color: #23b7a4;
+}
+@media (max-width:767px) {
+    .slide-1, .slide-2, .slide-3{
+        background-size: cover;
+        background-position:center;
+    }
+}
+
 .name-of-section{
     font-family: 'Quattrocento Sans', sans-serif;
     font-weight: 700;
@@ -216,23 +300,11 @@ background:#929b9b ;
     }
       
 /* slider */
-.slide-buttons{
-width: 13px;
-height: 13px;
-border: 2px solid #fff;
-border-radius: 50%;
-margin-right: 10px;
-}
-.slide-buttons:hover{
-    background-color: #fff;
-}
-.slider-arr{
-    display: flex;
-    justify-content: center;
-}
+
 .slider-section-buttons{
     width: 100%;
 }
+
 .name-decoration{
     display: flex;
     margin-top: 80px;
@@ -1041,15 +1113,29 @@ margin-right: 10px;
         justify-content: space-evenly;
         padding: 0 10px;
     }
-    
-    .slide{
-        display: flex;
-        padding-bottom: 30px;
-        justify-content: center;
-    }
+    .swiper-button-prev, .swiper-button-next{
+        display: none
+       }
     .slider-section-buttons{
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .slider-section-buttons>.btn{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .swiper .swiper-pagination{
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .swiper .swiper-pagination-bullet{
+        width: 13px;
+        height: 13px;
+        border: 2px solid #fff;
+        background-color: transparent;
+        opacity: 100%;
     }
     
     .we-are-modest-section-part-1{

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -51,7 +52,77 @@
     </header>
     <main>
         <section id="slider">
-            <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div data-hash="slide-1" class="swiper-slide slide-1"> 
+                         <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="content-of-slider-section">
+                                    <div class="name-of-section name-of-slider">welcome to our marketplace</div>
+                                    <div class="text-of-slider text-of-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique
+                                        ndolor
+                                        non, ornare sagittis dolor. Nulla vestibulu lacus ...</div>
+                                    <div class="slider-section-buttons">
+                                        <button class="btn">view more</button>
+                                        <button class="btn">video tour</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div data-hash="slide-2" class="swiper-slide slide-2"> 
+                        <div class="container">
+                           <div class="row">
+                               <div class="col-xs-12 col-sm-7 col-md-7">
+                                   <div class="content-of-slider-section">
+                                   <div class="name-of-section name-of-slider">welcome to our marketplace</div>
+                                   <div class="text-of-section text-of-slider">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique
+                                       ndolor
+                                       non, ornare sagittis dolor. Nulla vestibulu lacus ...</div>
+                                   <div class="slider-section-buttons">
+                                       <button class="btn">view more</button>
+                                       <button class="btn">video tour</button>
+                                   </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div> 
+                   </div>
+                   <div data-hash="slide-3" class="swiper-slide slide-3"> 
+                    <div class="container">
+                       <div class="row">
+                           <div class="col-xs-12 col-sm-7 col-md-7">
+                               <div class="content-of-slider-section">
+                               <div class="name-of-section name-of-slider">welcome to our marketplace</div>
+                               <div class="text-of-section text-of-slider">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique
+                                   ndolor
+                                   non, ornare sagittis dolor. Nulla vestibulu lacus ...</div>
+                               <div class="slider-section-buttons">
+                                   <button class="btn">view more</button>
+                                   <button class="btn">video tour</button>
+                               </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div> 
+               </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <!-- <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-7 col-md-7">
                         <div class="content-of-slider-section">
@@ -73,7 +144,7 @@
                     </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <section id="we-are-modest-section">
             <div class="container">
@@ -479,5 +550,6 @@
     </div>
 
 </body>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="app.js"></script>
 </html>
