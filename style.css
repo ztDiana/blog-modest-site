@@ -240,16 +240,21 @@ background:#929b9b ;
     background-color: rgba(255, 255, 255, 0.767);
     color: #23b7a4;
 }
-.slide-3 .name-of-slider{
-    color: black;
+
+.slide-3 .content-of-slider-section{
+    border-radius: 15px;
 }
-.slide-3 .text-of-slider{
-    color: black;
-}
-.slide-3 .content-of-slider-section .text-of-section, .name-of-section{
-    background-color: rgba(255, 255, 255, 0.493);
+.slide-3 .text-of-section{
+    background-color: rgba(0, 0, 0, 0.719);
     border-radius: 15px;
     padding: 10px;
+    color: #fff;
+}
+.slide-3 .name-of-section{
+    background-color: rgba(0, 0, 0, 0.719);
+    border-radius: 15px;
+    padding: 10px;
+    color: #fff;
 }
 .slide-3 .slider-section-buttons>.btn{
     background-color: rgba(255, 255, 255, 0.767);
