@@ -1297,10 +1297,6 @@ body {
 
     .main-menu {
         display: flex;
-        height: 60px;
-        justify-content: space-between;
-        overflow: scroll;
-        margin-bottom: 5px;
     }
 
     .main-menu::-webkit-scrollbar {
