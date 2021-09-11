@@ -60,7 +60,8 @@ new Swiper('.swiper',{
     mousewheel:{
         sensitivity:1,
         // класс обэкта на якому буде спрацьовувати прокрутка мишы
-        eventsTarget:".swiper"
+        eventsTarget:".swiper",
+        360:false
     },
     // безкынечний слайдер
     loop:true,
