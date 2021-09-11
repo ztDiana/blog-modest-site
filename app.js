@@ -106,3 +106,25 @@ function close(){
     modal.classList.remove("show")
     modal.classList.add("hidden")
 }
+
+
+let mobileMenu=document.querySelector(".navMenu");
+let mainMenu=document.querySelector(".navigation")
+
+mobileMenu.addEventListener("click",function(){
+    mobileMenu.classList.toggle("active-menu");
+    if(mobileMenu.classList.contains("active-menu")){
+        mainMenu.classList.add("active-menu");
+    }
+    else{
+        mainMenu.classList.remove("active-menu")
+    }
+})
+window.addEventListener("scroll",function(){
+    if(window.scrollY>45){
+        mobileMenu.classList.add("navMenuScroll")
+    }
+    else{ mobileMenu.classList.remove("navMenuScroll")
+    }
+
+})
