@@ -1283,7 +1283,7 @@ body {
         opacity: 1;
         visibility: visible;
         transform: translateX(0);
-        top: 45px;
+        top: 44px;
         background-color: #1d2126;
         z-index: 5;
         flex-direction: column;
