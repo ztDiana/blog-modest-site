@@ -1263,7 +1263,7 @@ body {
     }
     .active-menu span:nth-child(1) {
         position: relative;
-        top: 50%;
+        top: 45%;
         transform: rotate(45deg);
         transition: 0.5s;
         background-color: #23b7a4;
@@ -1271,7 +1271,7 @@ body {
     }
    .active-menu span:nth-child(2) {
         position: relative;
-        top:37%;
+        top:34%;
         transition: 0.5s;
         transform: rotate(-45deg);
         background-color: #23b7a4;
@@ -1283,7 +1283,7 @@ body {
         opacity: 1;
         visibility: visible;
         transform: translateX(0);
-        top: 50px;
+        top: 47px;
         background-color: #1d2126;
         z-index: 5;
         flex-direction: column;
