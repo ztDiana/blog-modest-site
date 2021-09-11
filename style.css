@@ -1216,6 +1216,7 @@ body {
         height: 31px;
         z-index: 5;
         width: 87.3px;
+        transition: 0.1s;
     }
     .navMenuScroll{
         border-radius: 25px;
@@ -1254,7 +1255,6 @@ body {
         bottom: 0;
         max-width: 280px;
         transform: translateX(150%);
-        transition: all 500ms ease-in-out;
     }
     .navMenu.active-menu{   
         background-color: #1d2126;
